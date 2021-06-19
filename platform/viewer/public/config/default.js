@@ -7,17 +7,32 @@ window.config = {
   servers: {
     dicomWeb: [
       {
-        name: 'DCM4CHEE',
-        wadoUriRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/wado',
-        qidoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
-        wadoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
+        name: 'DBServer',
+        wadoUriRoot: 'http://localhost:8088/wadouri',
+        qidoRoot: 'http://localhost:8088/qidors',
+        wadoRoot: 'http://localhost:8088/wadors',
         qidoSupportsIncludeField: true,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
-        enableStudyLazyLoad: true,
-        supportsFuzzyMatching: true,
+        // requestOptions: {
+        //   requestFromBrowser: true,
+        // },
       },
     ],
+    // dicomWeb: [
+    //   {
+    //     name: 'DCM4CHEE',
+    //     // wadoUriRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/wado',
+    //     wadoUriRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/wado',
+    //     qidoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
+    //     wadoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
+    //     qidoSupportsIncludeField: true,
+    //     imageRendering: 'wadors',
+    //     thumbnailRendering: 'wadors',
+    //     enableStudyLazyLoad: true,
+    //     supportsFuzzyMatching: true,
+    //   },
+    // ],
   },
   // Extensions should be able to suggest default values for these?
   // Or we can require that these be explicitly set
