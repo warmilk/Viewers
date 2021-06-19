@@ -16,6 +16,7 @@ window.config = {
       },
     ],
   },
+  // 全局键盘快捷键设置
   hotkeys: [
     // ~ Global
     {
