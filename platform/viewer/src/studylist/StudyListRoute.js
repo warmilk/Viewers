@@ -252,6 +252,7 @@ function StudyListRoute(props) {
           // Rows
           studies={studies}
           onSelectItem={studyInstanceUID => {
+            alert('jj');
             const viewerPath = RoutesUtil.parseViewerPath(appConfig, server, {
               studyInstanceUIDs: studyInstanceUID,
             });
@@ -427,7 +428,7 @@ function _sortStudies(studies, field, order) {
   });
 
   // Sort by field
-  sortedStudies.sort(function(a, b) {
+  sortedStudies.sort(function (a, b) {
     let fieldA = a[field];
     let fieldB = b[field];
     if (field === 'StudyDate') {
