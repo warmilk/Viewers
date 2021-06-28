@@ -8,9 +8,12 @@ window.config = {
     dicomWeb: [
       {
         name: 'DBServer',
-        wadoUriRoot: 'http://localhost:8088/wadouri',
-        qidoRoot: 'http://localhost:8088/qidors',
-        wadoRoot: 'http://localhost:8088/wadors',
+        // wadoUriRoot: 'http://localhost:8088/wadouri',
+        // qidoRoot: 'http://localhost:8088/qidors',
+        // wadoRoot: 'http://localhost:8088/wadors',
+        wadoUriRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/wado',
+        qidoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
+        wadoRoot: 'https://server.dcmjs.org/dcm4chee-arc/aets/DCM4CHEE/rs',
         qidoSupportsIncludeField: true,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
